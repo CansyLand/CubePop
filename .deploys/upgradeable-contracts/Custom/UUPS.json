@@ -1,0 +1,12 @@
+{
+  "id": 80001,
+  "network": "Custom",
+  "deployments": {
+    "0xc85918fdc5035a922de13eb8b888ab2f4f781fd1": {
+      "date": "2023-11-19T02:27:29.535Z",
+      "contractName": "PopZing",
+      "fork": "london",
+      "implementationAddress": "0x5F5a90f859BB03A816e01323d3D8a92bEA94CD9F"
+    }
+  }
+}
