@@ -8,7 +8,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC1155/extensions/ERC1155Burn
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract MyToken is Initializable, ERC1155Upgradeable, AccessControlUpgradeable, ERC1155PausableUpgradeable, ERC1155BurnableUpgradeable, UUPSUpgradeable {
+contract PopZing is Initializable, ERC1155Upgradeable, AccessControlUpgradeable, ERC1155PausableUpgradeable, ERC1155BurnableUpgradeable, UUPSUpgradeable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
     /// @custom:oz-upgrades-unsafe-allow constructor
@@ -17,7 +17,7 @@ contract MyToken is Initializable, ERC1155Upgradeable, AccessControlUpgradeable,
     }
 
     function initialize(address defaultAdmin, address minter) initializer public {
-        __ERC1155_init("https://mywebsote.com/dcl/cubepop/{id}");
+        __ERC1155_init("https://cansyland.github.io/PopZing/metadata/token/{id}.json");
         __AccessControl_init();
         __ERC1155Pausable_init();
         __ERC1155Burnable_init();
